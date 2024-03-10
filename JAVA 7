@@ -1,0 +1,15 @@
+//Crie um algoritmo que lê o salário de um funcionário, reajusta o salário em 7% e mostra o resultado
+  import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Double Reajuste, Salario;
+        Scanner reader=new Scanner(System.in);
+        System.out.println("Digite seu salario: ");
+        Salario=reader.nextDouble();
+        Reajuste=(Salario*7)/100;
+        System.out.println("Seu salario atual é:"+Reajuste);
+
+
+
+    }
+}
