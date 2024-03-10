@@ -1,0 +1,13 @@
+//Crie um algoritmo que lê um valor real em dólar, e converte o valor para reais. Considere que a cotação é US$ 1 = R$ 4,95.
+import java.util.Scanner;
+public class EXERCICIO05.java{
+    public static void main(String[] args){
+        Double Real,Conversor;
+        Double Dolar=4.95;
+        Scanner reader=new Scanner(System.in);
+        System.out.println("Digite quanto você quer converter em dolar: ");
+        Real=reader.nextDouble();
+        Conversor=Dolar*Real;
+        System.out.println("O valor convertido do dolar para o real com este valor é: " + Conversor);
+    }
+}
