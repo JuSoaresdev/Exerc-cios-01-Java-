@@ -1,0 +1,22 @@
+//Construa um programa que calcule as raízes de uma equação de 2º grau (Ax2+Bx+C). Sendo que os valores A,B e C são fornecidos pelo usuário. Considere que tem duas raízes.
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Double A,B,C,Delta,y1,y2;
+        Scanner reader=new Scanner(System.in);
+        System.out.println("Digite o valor de A: ");
+        A=reader.nextDouble();
+        System.out.println("Digite o valor de B: ");
+        B=reader.nextDouble();
+        System.out.println("Digite o valor de C: ");
+        C=reader.nextDouble();
+        Delta=(B*B)-4*A*C;
+        System.out.println(Delta);
+        y1=(-B+Math.sqrt(Delta))/2*A;
+        y2=(-B-Math.sqrt(Delta))/2*A;
+        System.out.println("O valor da primeira raiz é "+y1+" e a segunda raiz é "+y2);
+        
+        
+    }
+}
