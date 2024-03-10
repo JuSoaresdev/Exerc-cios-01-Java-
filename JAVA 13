@@ -1,0 +1,20 @@
+//Escreva um programa que calcula o salário líquido de um funcionário. O programa deve solicitar o valor da hora de trabalho, o número de horas trabalhadas no mês e o percentual de desconto do INSS.
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Double HoraTrabalho,HorasTrabalhadas,DencontoINSS,SalarioLiquido,Porcen;
+        Scanner reader=new Scanner(System.in);
+        System.out.println("Qual valor da Hora trabalhada? ");
+        HoraTrabalho=reader.nextDouble();
+        System.out.println("Quantas horas foram trabalhadas? ");
+        HorasTrabalhadas=reader.nextDouble();
+        System.out.println("Qual o valor do desconto INSS: ");
+        DencontoINSS=reader.nextDouble();
+        Porcen=DencontoINSS/100;
+        SalarioLiquido=(HoraTrabalho*HorasTrabalhadas)*Porcen;
+        System.out.println("O valor do salario liquido é :"+SalarioLiquido);
+        
+    }
+    
+    
+}
