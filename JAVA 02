@@ -1,0 +1,14 @@
+//Crie um algoritmo que lê dois números, X e Y, e mostra o resto da divisão entre eles.
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        int Numero01,Numero02,Resto;
+        Scanner s=new Scanner(System.in);
+        System.out.println("Escreva um numeros: ");
+        Numero01=s.nextInt();
+        System.out.println("Escreva outro numero: ");
+        Numero02=s.nextInt();
+        Resto=Numero01/Numero02;
+        System.out.println("O resto dessa divisão é "+Resto);
+    }
+} 
