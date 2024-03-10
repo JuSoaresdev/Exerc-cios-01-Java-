@@ -1,0 +1,13 @@
+//Escreva um programa que converte uma quantidade de metros para centímetros.
+
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Double Metros,Conversor;
+        Scanner reader=new Scanner(System.in);
+        System.out.println("Digite a quantidade de metros que quer converter: ");
+        Metros=reader.nextDouble();
+        Conversor=Metros*100;
+        System.out.println("O valor convertido para centimetros é:"+Conversor);
+    }
+}
