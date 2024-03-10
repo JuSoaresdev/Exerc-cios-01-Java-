@@ -1,0 +1,31 @@
+//Escrever um algoritmo que lê: - a porcentagem do IPI a ser acrescido no valor das peças - o código da peça 1, valor unitário da peça 1, quantidade de peças 1 - o código da peça 2, valor unitário da peça 2, quantidade de peças 2. O algoritmo deve calcular o valor total a ser pago e apresentar o resultado.
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Double IPI,CodPeça,ValorUni,QuantPeça,CodePeça2,ValorUni2,QuantPeça2,VALOR1,VALOR2,RESULTADO;
+        Scanner reader=new Scanner(System.in);
+        System.out.println("Qual a porcentagem do IPI?");
+        IPI=reader.nextDouble();
+        System.out.print("Qual o codigo da peça?");
+        CodPeça=reader.nextDouble();
+        System.out.print("Qual o valor unitario?");
+        ValorUni=reader.nextDouble();
+        System.out.print("Quantidade de peça?");
+        QuantPeça=reader.nextDouble();
+        System.out.print("Qual o codigo da segunda peça?");
+        CodePeça2=reader.nextDouble();
+        System.out.print("Qual o valor unitario?");
+        ValorUni2=reader.nextDouble();
+        System.out.print("Quantidade de peça?");
+        QuantPeça2=reader.nextDouble();
+        VALOR1=ValorUni*CodPeça;
+        VALOR2=ValorUni2*QuantPeça2;
+        RESULTADO=(VALOR1+VALOR2)*IPI/100;
+        System.out.print("O valor a ser pago é "+RESULTADO);
+
+
+
+
+        
+    }
+}
