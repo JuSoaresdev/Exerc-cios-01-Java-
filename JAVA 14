@@ -1,0 +1,17 @@
+//Desenvolva um programa que, dados dois valores A e B, troque os valores de forma que A passe a ter o valor de B e vice-versa. Exiba os valores após a troca.
+import java.util.Scanner;
+public class Main{
+    public static void main(String[] args){
+        Double A,B,C,D;
+        Scanner reader=new Scanner(System.in);
+        System.out.println("Digite o primeiro numero: ");
+        A=reader.nextDouble();
+        System.out.println("Digite um segundo numero: ");
+        B=reader.nextDouble();
+        System.out.println("Os numeros seram invertidos: ");
+        C=B;
+        D=A;
+        System.out.println("Os numeros invertidos são primeiro o "+ C +" e depois o "+ D);
+        
+    }
+}
